@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<% include partials/p_head %>
+<body>
+<div class="profile">
+	<div class="profile_flex">
+		<div class="account_left">
+			<div class="account_info">
+				<img src="" alt="">
+		 		<h1><%= user.local.nickname %></h1>
+			</div>
+			<a href="/logout" class="btn btn-dark logout">Cerrar seccion</a>
+		</div>
+		<div class="profile_menu">ssss
+		</div>
+	</div>
+	<div class="profile_post">
+		<% include partials/post.ejs %>
+	</div>	
+</div>
+
+</body>
+
+
+</html>

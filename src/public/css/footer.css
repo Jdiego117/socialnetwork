@@ -1,0 +1,27 @@
+footer{
+	background: #000;
+	height: 30px;
+	position: relative;
+	bottom: 0;
+}
+
+.footer h2 {
+	font-size: 15px;
+	float: left;
+	color: #fff;
+}
+
+.footer h3 {
+	font-size: 15px;
+	float: right;
+	color: #fff;
+}
+
+@media(min-width: 480px) {
+	.footer h2 {
+		font-size: 20px;
+	}
+	.footer h3 {
+		font-size: 20px;
+	}
+}

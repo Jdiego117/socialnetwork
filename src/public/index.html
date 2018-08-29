@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<% include partials/home_head %>
+</head>
+<body>
+	<header>
+		<div class="contenedor">
+			<h1>Nombre</h1>
+			<input type="checkbox" id="menu-bar">
+			<label class="icon-menu" for="menu-bar"></label>
+			<nav class="menu">
+				<a href="/login">Ingresar</a>
+				<a href="/signup">Registrarse</a>
+				<a href="/info">Información</a>
+				<a href="/contact">Contacto</a>		
+			</nav>
+		</div>
+	</header>
+	<article>
+		<% include partials/home_slider %>
+	</article>
+	<article>
+			<div class="col-12 OutTitle">
+				<h1>Publicaciones Relevantes</h1>
+			</div>
+			<div class="jumbotron publication">
+				<div class="p_info">
+					<img src="img/profile.jpg">
+				<div>
+					<h2>Nombre Del autor</h2>
+					<h3>03/08/2018</h3>	
+				</div>
+				</div>
+				<div class="p_text">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation.	
+						lorem		
+					</p>
+				</div>
+			</div>
+	</article>
+	<footer>
+		<div class="contenedor footer">
+			<h2>Nombre de la pagina</h2>
+			<h3>Informacion 2</h3>
+		</div>
+	</footer>
+	<script type="text/javascript" src="../public/js/jquery-3.3.1.min.js" />
+	<script type="text/javascript" src="../public/js/popper.min.js" />
+</body>
+</html>

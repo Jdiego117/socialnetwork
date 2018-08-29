@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<div class="container">
+		<div class="col-sm-6 mx-auto">
+			<div class="card mt-5">
+				<div class="card-body">
+					<div class="card">
+						<h1 class="text-center"><span class="icon-user-plus"></span> Registrase</h1>
+						<% if (message.length > 0) { %>
+             				<div class="alert alert-danger">
+                		<%= message %>
+              				</div>
+            			<% } %>
+					</div>
+
+					<form action="/signup" method="POST">
+						<div class="form-group">
+							<label for="email"><span class="icon-mail-alt"></span> Correo electronico</label>
+							<input type="text" name="email" id="email" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="name"><span class="icon-address-card"></span> Nombre</label>
+							<input type="text" name="name" id="name" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="lastname">Apellido</label>
+							<input type="text" name="lastname" id="lastname" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="nickname">Nombre de usuario</label>
+							<input type="text" name="nickname" id="nickname" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="password">Contraseña</label>
+							<input type="password" name="password" id="password" class="form-control">
+						</div>
+						<input type="submit" class="btn btn-dark" value="Registrase">
+
+						<hr>
+
+						<div class="text-center">
+							<p>¿Ya tienes cuenta? <a href="/login">Ingresar</a></p>
+							<a href="/">Volver al inicio</a>
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

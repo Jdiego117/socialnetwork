@@ -1,0 +1,91 @@
+@import url(bootstrap.css);
+@import url(login.css);
+@import url(fontello.css);
+@import url(menu.css);
+@import url(profile.css);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;	
+}
+
+header{
+	width: 100%;
+	height: 50px;
+	color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+.home_info {
+	position: absolute;
+	width: 100%;
+	top: 25%;
+	height: 75%;
+	z-index: 99;
+}
+
+.home_info h2{
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+}
+
+.home_info p{
+	color: #fff;
+	text-align: center;
+}
+
+.home_info a {
+	width: 40%;
+	display: block;
+	margin:auto;	
+}
+
+.contenedor{
+	width: 98%;
+	margin: auto;
+}
+
+header .contenedor {
+	display: table;
+}
+
+.home_body img, .login img, .signup img{
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	bottom: 0;
+}
+
+.l_form{
+	z-index: 99;
+}
+
+@media (min-width: 480px){
+	.home_info h2{
+	font-size: 30px;
+	}
+	.home_info a{
+		width: 25%;
+	}
+}
+
+@media (min-width: 720px){
+	.home_info a{
+		width: 20%;
+	}
+}
+
+@media (min-width: 1080px){
+	.home_info a{
+		width: 10%;
+	}
+}

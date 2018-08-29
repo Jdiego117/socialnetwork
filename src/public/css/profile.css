@@ -1,0 +1,39 @@
+.account_left {
+	width: 25%;
+	height: 100vh;
+	display: fixed;
+	background: #222334;
+}
+
+.profile_flex {
+	display: flex;
+}
+
+.account_left {
+	display: flex;
+}
+
+.account_info strong {
+	color: #FFF;
+}
+
+.account_info h1 {
+	color: #FFF;
+}
+
+.logout {
+	position: absolute;
+	bottom: 4px;
+}
+
+.profile_menu {
+	width: 75%;
+	height: 50px;
+	background: #222323;
+	display: flex;
+	display: fixed;
+}
+
+.profile_post {
+	width: 75%;
+}
